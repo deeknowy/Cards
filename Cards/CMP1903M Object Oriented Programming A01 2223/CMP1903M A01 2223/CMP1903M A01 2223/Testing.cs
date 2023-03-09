@@ -42,7 +42,7 @@ namespace CMP1903M_A01_2223
 
         static void PrintCards(Pack pack)
         {
-            for (int i = 0; i < 52; i++)
+            for (int i = 0; i < 51; i++)
             {
                 Console.Write("{0,-19}", pack.Deal());
                 if ((i + 1) % 4 == 0)
