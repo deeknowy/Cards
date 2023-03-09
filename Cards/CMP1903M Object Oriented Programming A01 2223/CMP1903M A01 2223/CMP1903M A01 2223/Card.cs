@@ -1,9 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Schema;
 
 namespace CMP1903M_A01_2223
 {
@@ -36,8 +35,8 @@ namespace CMP1903M_A01_2223
         }
         //Suit: numbers 1 - 4
         public string Suit
-        { 
-            get { return sNum; } 
+        {
+            get { return sNum; }
             set
             {
                 if (value == "HEARTS" || value == "CLUBS" || value == "DIAMONDS" || value == "SPADES")
@@ -45,6 +44,10 @@ namespace CMP1903M_A01_2223
                     sNum = value;
                 }
             }
+        }
+        public override string ToString()
+        {
+            return Value+ " : "+ Suit;
         }
     }
 }
