@@ -1,9 +1,6 @@
 ﻿using System;
-using System.CodeDom.Compiler;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -68,7 +65,7 @@ namespace CMP1903M_A01_2223
         public Card Deal()
         {
             //Returns one card
-            Card card = pack[];
+            Card card = pack[0];
             pack = pack.Skip(1).ToArray();
             return card;
         }
